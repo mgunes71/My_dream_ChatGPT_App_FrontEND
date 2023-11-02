@@ -1,0 +1,42 @@
+
+.link-text {
+  text-decoration: none !important;
+  color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    color: #173753 !important;
+  }
+}
+
+.primary-text {
+  color: #2892D7;
+}
+
+.dark-text {
+  color: #212A3E;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.text-small {
+  font-size: 12px;
+}
+
+.text-large {
+  font-size: 16px;
+}
+
+.text-default {
+  color: #173753;
+}
+
+.text-600 {
+  font-weight: 600;
+}
+
+.text-700 {
+  font-weight: 700;
+}

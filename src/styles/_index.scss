@@ -1,0 +1,12 @@
+@import "reset";
+@import "variables";
+@import "components";
+
+html, body {
+  font-family: "Cairo", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: #6DAEDB;
+}

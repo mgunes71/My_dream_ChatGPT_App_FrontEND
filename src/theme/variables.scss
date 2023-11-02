@@ -1,0 +1,10 @@
+$theme-colors: (
+  "primary": #2892D7,
+  "danger": #F7AEF8,
+  "success": #1B4353,
+  "secondary": #6DAEDB,
+  "body": #173753
+);
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
