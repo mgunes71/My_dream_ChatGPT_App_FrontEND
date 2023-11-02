@@ -1,0 +1,18 @@
+<div class="row w-100 h-100 justify-content-center align-items-center bg-secondary text-default">
+  <form [formGroup]="form" (ngSubmit)="login()" class="col-12 col-lg-6 form-floating">
+    <h3>Welcome To Sign-In</h3>
+    <p>My Dream App</p>
+    <div class="">
+      <input formControlName="email" type="email" class="form-control" id="floatingInputEm" placeholder="E-mail" >
+      <label for="floatingInputEm">E-Mail</label>
+    </div>
+    <div class="">
+      <input formControlName="password" type="password" class="form-control" id="floatingInputPass" placeholder="Password">
+      <label for="floatingInputPass">Password</label>
+    </div>
+    <div>
+      <button [disabled]="form.invalid || loading" class="btn btn-primary">Sign-In</button>
+      <p  class="my-3">Don't you have an account? Now<span routerLink="/authentication/sign-up" class="link-text text-warning fw-bold ms-2">Register</span></p>
+    </div>
+  </form>
+</div>

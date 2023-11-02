@@ -1,0 +1,17 @@
+:host {
+  display: contents;
+
+  i {
+    font-size: 40px;
+  }
+
+  .purple-border {
+    border: 1px solid #7972e6;
+  }
+
+  .form-control:focus {
+    background: inherit;
+    color: white;
+  }
+
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {AppService} from "./app.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my_dream_frontend';
+  loading = true;
+
+  constructor(private appService:AppService) {
+    this.appService.Initialize().finally(() => {
+      setTimeout(() => {
+        this.loading = false;
+
+      }, 1000);
+    });
+  }
 }
