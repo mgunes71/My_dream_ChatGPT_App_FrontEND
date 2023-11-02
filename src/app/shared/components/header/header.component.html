@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" >My Dream</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav d-flex align-items-center font-x-large">
+        <li class="nav-item text-default">
+          <a class="nav-link" routerLink="/dream">Dreams</a>
+        </li>
+      </ul>
+
+      <ul class="ms-auto navbar-nav d-flex align-items-center">
+        <li><i class="fas fa-user"></i></li>
+        <li>{{user?.email}}</li>
+        <button (click)="logout()" class="btn btn-danger ms-2">Logout</button>
+      </ul>
+    </div>
+  </div>
+</nav>
