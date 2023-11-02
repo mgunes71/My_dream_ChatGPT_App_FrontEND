@@ -1,0 +1,18 @@
+<div class="h-100 text-default d-flex flex-column justify-content-between">
+  <div class="p-3">
+    <h5 class="text-center p-2">Your Dream</h5>
+    <p class="text-600">{{inputText}}</p>
+  </div>
+
+  <form [formGroup]="form" (ngSubmit)="sendDream()" class="row align-items-center">
+    <div class="col-6 form-group p-3 d-flex align-items-center">
+      <input  class="form-control" formControlName="name" placeholder="Dream Name">
+    </div>
+    <div class="col-12 form-group p-3 d-flex align-items-center w-100">
+      <input id="send-input" [(ngModel)]="inputText" class="form-control" formControlName="question" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      <button [disabled]="form.invalid" type="submit" class="bg-sky me-2 p-2" id="btn-send" ><i class="fas fa-paper-plane"></i></button>
+      <span  id="microphone-icon" class="p-2 text-black"><i class="fas fa-microphone"></i></span>
+    </div>
+  </form>
+
+</div>

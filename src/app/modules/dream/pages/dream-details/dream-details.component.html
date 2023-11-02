@@ -1,0 +1,20 @@
+<div class="h-100 text-body container d-flex flex-column font-x-large">
+  <h5 class="text-center">{{dream?.createdAt | moment}}</h5>
+
+  <div >
+    <h6 class="text-center text-700">Dream</h6>
+    <p>{{dream?.question}}</p>
+  </div>
+  <hr>
+
+  <div>
+    <h6 class="text-700 text-center">Dream Interpretation</h6>
+    <p>{{dream?.text}}</p>
+  </div>
+
+  <div>
+    <button (click)="deleteDream(dream?.id)" class="btn btn-danger btn-lg w-100 mt-auto mb-3">
+      <i *ngIf="loading" class="fas fa-spin fa-sync"></i>
+      Delete Dream</button>
+  </div>
+</div>

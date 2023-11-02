@@ -1,0 +1,27 @@
+<div class=" p-3 text-default">
+  <div class="d-flex justify-content-between align-items-center mb-2">
+    <h5 class="font-large text-700 mb-2">My Dreams</h5>
+    <a routerLink="/dream/add" class="link-text" style="font-size: 30px"><i class="fas fa-plus-circle"></i></a>
+  </div>
+  <hr>
+  <div class="input-group mb-3 justify-content-end">
+    <input placeholder="Search" [(ngModel)]="searchedKeyword" (ngModelChange)="searchDream()">
+  </div>
+  <div class="mb-4">
+    <div class="row">
+      <ng-container *ngFor="let dream of dreamView">
+        <div routerLink="/dream/list/{{dream.id}}" class="col-12 col-lg-6 my-3">
+          <div class="d-flex align-items-center dream-card bg-body p-3">
+            <i class="fas fa-moon me-3"></i>
+            <div>
+              <p class="mb-0">{{dream.createdAt | moment}}</p>
+              <p class="">{{dream.name | truncate}}</p>
+            </div>
+            <i class="fas fa-angle-right ms-auto"></i>
+          </div>
+
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

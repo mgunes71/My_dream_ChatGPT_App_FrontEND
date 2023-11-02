@@ -1,0 +1,20 @@
+:host{
+  display: contents;
+
+  #btn-send {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+  }
+
+  #send-input {
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #microphone-icon {
+    background: white;
+    border-radius: 10px;
+  }
+}
